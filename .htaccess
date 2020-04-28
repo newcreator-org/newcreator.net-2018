@@ -1,0 +1,7 @@
+order allow,deny
+allow from all
+deny from .us
+
+RewriteEngine on
+RewriteBase /
+RewriteRule ^app/users/users/register/(.*)$ https://newcreator.net [R=301,L]
